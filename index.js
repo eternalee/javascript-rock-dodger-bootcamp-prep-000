@@ -137,7 +137,7 @@ function moveDodgerLeft() {
     const dodgerLeftEdge = positionToInteger(DODGER.style.left)
 
     if (dodgerLeftEdge > 0) {
-     DODGER.style.left = `${left - 4}px`
+     DODGER.style.dodgerLeftEdge = `${left - 4}px`
     }
   })
 }
@@ -148,7 +148,7 @@ function moveDodgerRight() {
     //var leftnumbers = dodger.style.left.replace('px','')
     //var left = parseInt(leftnumbers, 10)
     if (dodgerLeftEdge < 360) {
-      DODGER.style.left = `${left + 4}px`
+      DODGER.style.dodgerLeftEdge = `${left + 4}px`
     }
   })
 }
