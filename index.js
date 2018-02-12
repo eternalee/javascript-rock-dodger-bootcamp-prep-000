@@ -111,14 +111,12 @@ function endGame() {
   clearInterval(gameInterval);
   ROCKS.forEach(function(rock) {
     rock.remove()
-  }) 
+  });
   document.removeEventListener(`keydown`, moveDodger);
   return alert("YOU LOSE!");
 }
 
 function moveDodger(e) {
-  // implement me!
-
   if ([LEFT_ARROW, RIGHT_ARROW].indexOf(e.which) > -1) {
     e.preventDefault()
     e.stopPropagation()
