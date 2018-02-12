@@ -81,7 +81,7 @@ function createRock(x) {
      }
      else {
        if (top < GAME_HEIGHT) {
-         window.requestAnimationFrame(moveRock
+         window.requestAnimationFrame(moveRock)
        }
        else {
          rock.remove()
@@ -149,7 +149,7 @@ function moveDodgerRight() {
     const dodgerLeftEdge = positionToInteger(DODGER.style.left)
     //var leftnumbers = dodger.style.left.replace('px','')
     //var left = parseInt(leftnumbers, 10)
-    if (left < 360) {
+    if (dodgerLeftEdge < 360) {
       dodger.style.left = `${left + 4}px`
     }
   })
